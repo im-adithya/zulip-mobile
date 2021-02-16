@@ -31,7 +31,7 @@ const process_message = function (words: string[],
 
     words.forEach(function (word) {
         var clean = escape_user_regex(word);
-        var before_punctuation = '\\s|^|>|[\\(\\".,\';\\[]';
+        var before_punctuation = '|^|>|[\\(\\".,\';\\[]';
         var after_punctuation = '\\s|$|<|[\\)\\"\\?!:.,\';\\]!]';
 
 
